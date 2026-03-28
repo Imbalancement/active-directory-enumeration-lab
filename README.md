@@ -46,8 +46,17 @@ Key Findings:
 
 👉 These services confirm the target is an Active Directory Domain Controller
 
-📸 Nmap Scan Results: 
-<img width="1280" height="765" alt="nmap" src="https://github.com/user-attachments/assets/80c77c75-2194-425a-9ff7-c14568355c13" />
+📸 **Nmap Scan Results:**
+
+![Nmap Scan](<img width="1280" height="765" alt="nmap" src="https://github.com/user-attachments/assets/80c77c75-2194-425a-9ff7-c14568355c13" />)
+
+**Analysis:**
+- Port 445 confirms SMB is enabled
+- Port 389 confirms LDAP is running
+- Port 88 indicates Kerberos authentication
+
+👉 These services confirm the system is a Domain Controller.
+
 
 🔎 Phase 2: SMB Enumeration
 Command:
