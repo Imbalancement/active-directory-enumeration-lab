@@ -35,7 +35,21 @@ The objective was to:
 | WIN10-CLIENT  | 192.168.56.20   |
 | Kali          | 192.168.56.X    |
 
----
+## 🧭 Lab Overview
+
+📸 **Virtual Environment:**
+
+![Lab Setup](<img width="526" height="280" alt="Screenshot 2026-03-27 204106" src="https://github.com/user-attachments/assets/f2878335-e6d7-4956-bf8e-24ef4cc7767e" />)
+
+## 🛠️ Tools Used
+
+- Nmap
+- enum4linux-ng
+- smbclient
+- rpcclient
+- Kali Linux
+- Windows Server 2022
+
 
 # 🔍 Phase 1: Service Discovery
 
@@ -94,6 +108,20 @@ NT_STATUS_ACCESS_DENIED
 Analysis:
 User enumeration blocked
 Indicates hardened configuration against anonymous access
+
+# 🧠 Attacker Perspective
+
+From this enumeration, an attacker can identify:
+
+- Domain name (LAB)
+- Domain controller hostname (DC01)
+- Active Directory services (LDAP, Kerberos, SMB)
+- Potential null session access
+
+👉 This information can be used for:
+- Credential attacks
+- Kerberos attacks (Kerberoasting)
+- Lateral movement
 
 
 
