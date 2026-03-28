@@ -50,7 +50,6 @@ The objective was to:
 - Kali Linux
 - Windows Server 2022
 
-</Markdown>
 # 🔍 Phase 1: Service Discovery
 
 Key Findings:
@@ -70,7 +69,6 @@ Key Findings:
 - Port 88 indicates Kerberos authentication
 
 👉 These services confirm the system is a Domain Controller.
-
 
 🔎 Phase 2: SMB Enumeration
 Command:
@@ -101,7 +99,6 @@ Command:
 rpcclient -U "" -N 192.168.56.10
 
 Inside rpcclient:
-
 enumdomusers
 Result:
 NT_STATUS_ACCESS_DENIED
