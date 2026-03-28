@@ -50,7 +50,7 @@ The objective was to:
 - Kali Linux
 - Windows Server 2022
 
-
+```markdown
 # 🔍 Phase 1: Service Discovery
 
 Key Findings:
@@ -115,12 +115,12 @@ From this enumeration, an attacker can identify:
 
 - Domain name (LAB)
 - Domain controller hostname (DC01)
-- Active Directory services (LDAP, Kerberos, SMB)
+- Active Directory services 
 - Potential null session access
 
 👉 This information can be used for:
 - Credential attacks
-- Kerberos attacks (Kerberoasting)
+- Kerberos attacks
 - Lateral movement
 
 
