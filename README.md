@@ -86,7 +86,7 @@ Limited or restricted access observed
 
 # 🔍 Phase 3: Advanced Enumeration (enum4linux-ng)
 
-Command:
+## Command:
 enum4linux-ng 192.168.56.10
 Key Findings:
 Domain Name: LAB
@@ -99,7 +99,7 @@ System confirmed as part of Active Directory
 
 # 🔍 Phase 4: RPC Enumeration Attempt
 
-Command:
+## Command:
 rpcclient -U "" -N 192.168.56.10
 
 Inside rpcclient:
