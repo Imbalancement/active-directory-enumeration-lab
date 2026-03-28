@@ -39,7 +39,7 @@ The objective was to:
 
 📸 **Virtual Environment:**
 
-![Lab Setup](<img width="526" height="280" alt="Screenshot 2026-03-27 204106" src="https://github.com/user-attachments/assets/f2878335-e6d7-4956-bf8e-24ef4cc7767e" />)
+<img width="526" height="280" alt="Screenshot 2026-03-27 204106" src="https://github.com/user-attachments/assets/f2878335-e6d7-4956-bf8e-24ef4cc7767e" />
 
 ## 🛠️ Tools Used
 
@@ -62,7 +62,7 @@ Key Findings:
 
 📸 **Nmap Scan Results:**
 
-![Nmap Scan](<img width="1280" height="765" alt="nmap" src="https://github.com/user-attachments/assets/80c77c75-2194-425a-9ff7-c14568355c13" />)
+<img width="1280" height="765" alt="nmap" src="https://github.com/user-attachments/assets/80c77c75-2194-425a-9ff7-c14568355c13" />
 
 **Analysis:**
 - Port 445 confirms SMB is enabled
