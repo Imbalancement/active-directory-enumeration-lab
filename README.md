@@ -50,7 +50,7 @@ The objective was to:
 - Kali Linux
 - Windows Server 2022
 
-```markdown
+</Markdown>
 # 🔍 Phase 1: Service Discovery
 
 Key Findings:
