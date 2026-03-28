@@ -52,7 +52,7 @@ The objective was to:
 
 # 🔍 Phase 1: Service Discovery
 
-Key Findings:
+## Key Findings:
 445/tcp → SMB (microsoft-ds)
 389/tcp → LDAP
 88/tcp → Kerberos
@@ -73,9 +73,9 @@ Key Findings:
 
 # 🔎 Phase 2: SMB Enumeration
 
-Command:
+## Command:
 smbclient -L //192.168.56.10 -N
-Findings:
+## Findings:
 Attempted anonymous SMB share enumeration
 Limited or restricted access observed
 
