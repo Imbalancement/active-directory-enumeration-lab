@@ -70,6 +70,7 @@ Key Findings:
 
 👉 These services confirm the system is a Domain Controller.
 
+</Markdown>
 🔎 Phase 2: SMB Enumeration
 Command:
 smbclient -L //192.168.56.10 -N
