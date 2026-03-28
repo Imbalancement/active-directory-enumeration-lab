@@ -45,6 +45,47 @@ Key Findings:
 88/tcp → Kerberos
 
 👉 These services confirm the target is an Active Directory Domain Controller
+
 📸 Nmap Scan Results: 
 <img width="1280" height="765" alt="nmap" src="https://github.com/user-attachments/assets/80c77c75-2194-425a-9ff7-c14568355c13" />
+
+🔎 Phase 2: SMB Enumeration
+Command:
+smbclient -L //192.168.56.10 -N
+Findings:
+Attempted anonymous SMB share enumeration
+Limited or restricted access observed
+
+👉 Indicates basic access controls are in place
+
+📸 SMB Share Enumeration:
+<img width="1280" height="765" alt="smb-shares" src="https://github.com/user-attachments/assets/a3421aa5-9df3-4372-b162-f75d42126ef5" />
+
+🔍 Phase 3: Advanced Enumeration (enum4linux-ng)
+Command:
+enum4linux-ng 192.168.56.10
+Key Findings:
+Domain Name: LAB
+Hostname: DC01
+Domain SID identified
+System confirmed as part of Active Directory
+
+📸 Enumeration Output:
+<img width="1280" height="765" alt="enum-ng" src="https://github.com/user-attachments/assets/3e3ebd36-e859-436b-a857-f0032a3d9c10" />
+
+🔍 Phase 4: RPC Enumeration Attempt
+Command:
+rpcclient -U "" -N 192.168.56.10
+
+Inside rpcclient:
+
+enumdomusers
+Result:
+NT_STATUS_ACCESS_DENIED
+Analysis:
+User enumeration blocked
+Indicates hardened configuration against anonymous access
+
+
+
 
